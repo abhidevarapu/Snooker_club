@@ -44,11 +44,11 @@ $result1=mysqli_query($conn,$sql1);
 
 if(mysqli_num_rows($result)==1 && mysqli_num_rows($result1)==1){
     echo '<script>alert("Login successfull");</script>';
-    echo '<script>window.location.href = "afterlogin.php";</script>';
+    echo '<script>window.location.href = "afterlogin.html";</script>';
     }
 else if(mysqli_num_rows($result)==1 && mysqli_num_rows($result1)!=1){
     echo '<script>alert("login successfull");</script>';
-    echo '<script>window.location.href = "nonmem.php";</script>';
+    echo '<script>window.location.href = "nonmem.html";</script>';
    }
 else {
     echo '<script>alert("Please enter valid details");</script>';

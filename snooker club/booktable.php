@@ -11,11 +11,11 @@ $result=mysqli_query($conn,$sql);
 if($result)
 {
     echo '<script>alert("Table booked successfully");</script>';
-    echo '<script>window.location.href = "afterlogin.php?msg=Booked Successfully";</script>';
+    echo '<script>window.location.href = "afterlogin.html?msg=Booked Successfully";</script>';
 }
 else
 {
     echo '<script>alert("Booking unsuccessful");</script>';
-    echo '<script>window.location.href = "afterlogin.php?msg=Booking Unsuccessful";</script>';
+    echo '<script>window.location.href = "afterlogin.html?msg=Booking Unsuccessful";</script>';
 }
 ?>

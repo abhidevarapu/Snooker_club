@@ -50,7 +50,7 @@
             <strong>Enter the member id :</strong><br>
             <input type="number" required name="memid" placeholder="MemberID"><br><br>
             <button type="submit" class="btn">SEARCH</button><br><br>
-            <button class="btn"><a href="afterlogin.php">BACK</a></button>
+            <button class="btn"><a href="afterlogin.html">BACK</a></button>
         </form>
         <div class="container">
             <table>
