@@ -103,7 +103,7 @@
         <a href="#Facilities">Facilities</a>
         <a href="#events">Events</a>
         <a href="#gallery">Gallery</a>
-        <a href="home.html">Logout</a>
+        <a href="index.html">Logout</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>

@@ -16,104 +16,53 @@
         x.className = "topnav";
       }
     }
-    function openForm() {
-      document.getElementById("popupForm").style.display = "block";
-    }
-    function closeForm() {
-      document.getElementById("popupForm").style.display = "none";
-    }
     </script>
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      .openBtn {
-        display: flex;
-        justify-content: left;
-      }
-      .openButton {
-        background-color: #4CAF50;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-      }
-      .loginPopup {
-    position: relative;
-    text-align: center;
-    width: 100%;
-  }
-  .formPopup {
-    display: none;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border: 3px solid #999999;
-    z-index: 9;
-    background-color: #f9f9f9;
-    width: 400px;
-    height: 300px;
-    padding: 20px;
-    overflow: auto; 
-  }
-  .formContainer {
-    text-align: left;
-  }
-  .formContainer input[type=number],
-  .formContainer input[type=time],
-  .formContainer input[type=date] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    border-radius: 4px;
-  }
-  .formContainer .btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  .formContainer .btn.cancel {
-    background-color: #cc0000;
-  }
-  .formContainer .btn:hover {
-    opacity: 0.8;
-  }
-  a {
-      text-decoration: none;
-      color: inherit;
-    }
-      
-    </style>
 </head>
 <body bgcolor="#E6E6FA">
   <header>
     <div class="logo">
-      <img src="images\logo.jpg" alt="Snooker Club Logo" title="Logo">
+      <img src="images/logo.jpg" alt="Snooker Club Logo" title="Logo">
     </div>
     <div class="topnav" id="myTopnav">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
         <a href="#tables">Snooker Tables</a>
-        <a href="#memership">Memership</a>
         <a href="#Facilities">Facilities</a>
         <a href="#events">Events</a>
         <a href="#gallery">Gallery</a>
-        <a href="index.html">Logout</a>
+        <a href="#contact">Contact Us</a>
+        <a href="login.html">Login</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
   </header>
- <section id="tables">
+
+  <section id="home"> 
+     <!-- Hero section content goes here -->
+    <div class="title"><b>SNOOKER CLUB </b></div>
+    <hr>
+    <font color="blue">
+    <marquee width="100%"><a href="Signup.html"><b>New Users can signup</b></a></marquee>
+  </font>
+    <p><img src="images/event3.gif" width="1550px" height="450px"></p>
+  </section>
+
+  <section id="about">
+    <!-- About Us section content goes here -->
+    <div class="title"><b>About Us </b></div>
+      <hr><br>
+      <div class="container">
+        <div class="Club1">
+          <img src="images/img4.jpg" width="500px" height="350px">
+        </div>
+        <div class="text">
+          <p>Snooker Club is a unique sports platform bringing optimism and revolution to transform the world of sports by making a network amongst sports associates for developing a throughgoing and integrated kinship. Our mission is to excel, to educate, to inspire and to unite all people as an integrated global community by associating with all kinds of sports played around the world. Our main objective is to create and support the global sports ecosystem by bringing everyone related to sports in any form cohesively together to create a network with one another for mutual growth in sports played around the world.</p>
+      </div>
+      </div>
+  </section>
+
+  <section id="tables">
     <!-- Snooker Tables section content goes here -->
    
     <div class="title"><b>Snooker Tables </b></div>
@@ -131,31 +80,8 @@
     <p><b><dl>Lighting:</b></dl><dd> Snooker tables are often illuminated by overhead lighting to ensure even and adequate lighting across the playing surface. <br>Good lighting is crucial to enable players to see the balls and accurately judge their shots.</dd></p>
     <p><b><dl>Equipment:</b></dl><dd> Snooker tables are played with a set of 21 balls, including 15 red balls worth one point each, and six differently colored balls with different point values. </dd></p>
   </div></div> </p></div>
-  <br><br>
-  <h1>To book a table</a>
-      <button class="openButton" onclick="openForm()"><strong>BOOK</strong></button>
-    </h1>
-  <div class="loginPopup">
-      <div class="formPopup" id="popupForm">
-        <form method = "get" class="formContainer" autocomplete="off" action = "booktable.php">
-          <strong>Enter the following details to book a table</strong><br><br>
-          <input type="number" required name="memid" placeholder="MemberID"><br><br>
-          <input type="number" placeholder="tableno(1-45)" name="tableno" required><br><br>  
-          <input type="time" placeholder="HH:MM:SS" name="time" required><br><br>
-          <input type="date" placeholder="DD/MM/YYYY" name="date" required><br><br>
-          <button type="submit" class="btn">BOOK</button><br><br>
-          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-        </form>
-      </div>
-    </div>
-  <br><br>
-  <p style="font-size:20px;"><strong>To View booked Tables</strong>  <button class="openButton"><a href="viewtable.php">View</a></button></p>
   </section>
   
-  <section id="memership">
-    <div class="title"><b>Memership</b></div><hr><br>
-      <h1>You are already a member of Snooker Club</h1><br>
-  </section>
   <section id="Facilities">
     <!-- Facilities section content goes here -->
     <div class="title"><b>Facilities </b></div><hr><br>
@@ -235,6 +161,19 @@
   <img src="images/event2.gif" width="390px" height="200px">
 </div>
   </section>  
+  <div>
+  <section id="contact">
+    <!-- Contact Us section content goes here -->
+    <div class="title"><b>Contact Us </b></div><hr><br>
+    <center><strong>For any queries/Enquires you can reach out using this links</strong><br><br>
+    <div class="logo1">
+      <a href="https://www.instagram.com"><img src="images/insta.jpg"></a>
+      <a href="https://myaccount.google.com/"><img style="width: 50px; height: 30px;" src="images/email.png"></a>
+      <a href="https://twitter.com"><img src="images/tw.png"></a>
+    </div></center>
+  </section>
+  </div>
+  <br><br><br><br>
   <footer>
     <!-- Footer content goes here -->
     <b>© All Rights Reserved</b>
